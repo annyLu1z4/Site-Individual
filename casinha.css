@@ -1,57 +1,51 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  line-height: 1.6;
-  font-family: cursive;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
-  background-color: #f0f0f5;
+    line-height: 1.6;
+    font-family: cursive;
+    
 }
 
-
 h1 {
-  font-family: cursive;
-  font-size: 2.5em;
-  margin-bottom: 40px;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
 }
 
 h6 {
-  text-align: right;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.9em;
-  margin-top: 20px;
-  color: #333;
+    display: grid;
+    justify-content: end;
+    text-align: end;
+    text-overflow: unset;
+    font-family: 'Courier New', Courier, monospace;
 }
-
 
 button {
-  font-family: cursive;
-  padding: 12px 20px;
-  cursor: pointer;
-  font-size: 1.2em;
-  border: 3px solid black;
-  background-color: white;
-  border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
-  width: 220px; 
+    font-family: cursive;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: larger;
+    font-size: x-large;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-button:hover {
-  background-color: #ddd;
-  transform: scale(1.05);
+header {
+    padding: 60px;
+    text-align: center;
 }
 
 .container {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  gap: 15px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
 }
