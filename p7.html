@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="p1.css">
   <title>Gênio Quiz</title>
 </head>
+
 <div>
   <div class="background-container">
     <div class="background-image img1">
@@ -35,17 +36,17 @@
    <button id="erro1">Garibaldi</button>
   </div>
   <script>
-    const botoesErro = document.querySelectorAll('#erro1, #erro2, #erro3');
-   botoesErro.forEach(botao => {
-   botao.addEventListener('click', function() {
-    window.location.href = 'errado.html';
+     const botoesErro = document.querySelectorAll('#erro1, #erro2, #erro3');
+     botoesErro.forEach(botao => {
+     botao.addEventListener('click', function() {
+      window.location.href = 'errado.html';
+      });
     });
-   });
 
-    const botaoCerto = document.getElementById('certo');
-   botaoCerto.addEventListener('click', function() {
-   window.location.href = 'p3.html';
-   });
+     const botaoCerto = document.getElementById('certo');
+     botaoCerto.addEventListener('click', function() {
+      window.location.href = 'p8.html';
+     });
   </script>
 </body>
 </html>

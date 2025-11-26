@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="p1.css">
   <title>Gênio Quiz</title>
 </head>
-
+<button class="btn-top-left">1</button>
 <div>
   <div class="background-container">
     <div class="background-image img1">
@@ -35,6 +35,18 @@
    <button id="erro3">01 de abril de 2021</button>
    <button id="certo">29 de fevereiro de 2020</button>
   </div>
-<script src="p1.js"></script>
+  <script>
+    const botoesErro = document.querySelectorAll('#erro1, #erro2, #erro3');
+   botoesErro.forEach(botao => {
+   botao.addEventListener('click', function() {
+    window.location.href = 'errado.html';
+    });
+   });
+
+   const botaoCerto = document.getElementById('certo');
+   botaoCerto.addEventListener('click', function() {
+    window.location.href = 'p2.html';
+   });
+  </script>
 </body>
 </html>

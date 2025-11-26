@@ -50,6 +50,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top: 80px;
   padding: 40px 20px;
   color: #ffffff;
   text-shadow: 2px 2px 4px black;
@@ -73,4 +74,22 @@ h1 {
   .background-container {
     flex-direction: column;
   }
+}
+
+.btn-top-left {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #67a4a4;
+  color: #000;
+  border: 5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+  animation: none;
 }
