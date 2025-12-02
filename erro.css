@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("diabo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  color: #ab1111;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 4px solid #000000;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+h5 {
+  color: white;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #97111b;
+  color: #ffffff;
+  transition: 0.2s;
+  border: 4px solid #000000;
+  padding: 12px 25px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #971111;
+}
