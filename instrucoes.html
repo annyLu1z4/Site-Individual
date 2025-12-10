@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="download.jpg">
+  <link rel="stylesheet" href="instrucoes.css">
+  <title>Gênio Quiz</title>
+</head>
+
+<body>
+  <div class="credits-container">
+      <div class="credits">
+        <p>Instruções</p>
+
+        <p>
+          Esse é um quiz de Ordem Paranormal RPG, um "Role Playing Game" 
+          de investigação, terror e ação onde existem criaturas paranormais 
+          que vêm ao nosso mundo por meio do medo. Sendo por lendas, contos ou boatos: 
+          acreditando nelas e temendo-as, elas realmente se tornam reais, mas somente 
+          onde a membrana é fraca.  
+        </p>
+
+        <p>
+          Membrana nada mais é que o estado físico da realidade, 
+          o qual se enfraquece por conta do medo, tornando-se apta 
+          a trazer criaturas do "Outro Lado" para a realidade.
+          Você deve responder as perguntas certas; caso erre, volta ao início, 
+          tendo que repetir novamente todas as perguntas.
+        </p>
+        <p> Divirta-se com o Quiz e se conhecendo melhor o mundo de</p>
+        <p><strong>Ordem Paranormal</strong></p>
+      </div>
+      <audio id="bg-music" loop muted>
+        <source src="Ciranda de Dentes e Ossos - Ordem Paranormal.mp3" type="audio/mpeg">
+      </audio>
+      <button id="mute-btn" class="mute-btn">🔇</button>
+      <a href="index.html" class="button">Voltar</a>
+
+  </div>
+
+<script>
+  const music = document.getElementById("bg-music");
+  const btn = document.getElementById("mute-btn");
+  let muted = true;
+  window.addEventListener("load", () => {
+    music.volume = 0.5;
+    music.play().catch(() => {
+      document.addEventListener("click", tryPlay, { once: true });
+    });
+  });
+
+  function tryPlay() {
+    music.play();
+  }
+
+  btn.addEventListener("click", () => {
+    muted = !muted;
+    music.muted = muted;
+
+    btn.textContent = muted ? "🔇" : "🔊";
+  });
+</script>
+</body>
+</html>
